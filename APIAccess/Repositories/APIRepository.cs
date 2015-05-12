@@ -3,6 +3,7 @@ using JustEatTechnicalTest.Entities;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Net;
 
 namespace JustEatTechnicalTest.APIAccess.Repositories
 {
@@ -45,9 +46,10 @@ namespace JustEatTechnicalTest.APIAccess.Repositories
 
                 RestResponse response = _client.Execute(request) as RestResponse;
 
-                var content = response.Content;
-
-                return content;
+                if (response.StatusCode == HttpStatusCode.OK)                
+                    return response.Content;                
+                else
+                    return null;
             }
             catch (Exception ex)
             {                

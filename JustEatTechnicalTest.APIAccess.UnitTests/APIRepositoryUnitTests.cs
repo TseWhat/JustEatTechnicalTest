@@ -4,6 +4,7 @@ using Moq;
 using RestSharp;
 using System;
 using System.Linq;
+using System.Net;
 
 namespace JustEatTechnicalTest.APIAccess.UnitTests
 {
@@ -33,6 +34,44 @@ namespace JustEatTechnicalTest.APIAccess.UnitTests
             repository.GetRestaurants(GenerateRandomString());
 
             restClient.Verify(r => r.Execute(It.IsAny<IRestRequest>()));
+        }
+
+        [TestMethod]
+        public void ApiRepositoryGetRestaurantsMethodReturnsNonNullObjectIfStatusCodeIsOk()
+        {
+            Mock<IRestClient> restClient = new Mock<IRestClient>();
+            restClient.Setup(r => r.Execute(It.IsAny<IRestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.OK});
+
+            APIRepository repository = new APIRepository(restClient.Object);
+
+            var result = repository.GetRestaurants(GenerateRandomString());
+
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void ApiRepositoryGetRestaurantsMethodReturnsNullObjectIfStatusCodeIsNotOk()
+        {
+            Mock<IRestClient> restClient = new Mock<IRestClient>();
+            restClient.Setup(r => r.Execute(It.IsAny<IRestRequest>())).Returns(new RestResponse());
+
+            APIRepository repository = new APIRepository(restClient.Object);
+
+            var result = repository.GetRestaurants(GenerateRandomString());
+
+            Assert.IsNull(result);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void ApiRepositoryGetRestaurantsMethodThrowsExceptionIfExceptionIsCaught()
+        {
+            Mock<IRestClient> restClient = new Mock<IRestClient>();
+            restClient.Setup(r => r.Execute(It.IsAny<IRestRequest>())).Throws(new Exception());
+
+            APIRepository repository = new APIRepository(restClient.Object);
+
+            repository.GetRestaurants(GenerateRandomString());
         }
 
         private string GenerateRandomString()
