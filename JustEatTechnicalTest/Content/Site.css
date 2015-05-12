@@ -1,0 +1,89 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+footer {
+    background-color: #f8f8f8;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h1 {
+    color: #ce0b10;
+    font-size: 24pt;
+}
+
+label {
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    font-size: 12pt;
+}
+
+.navbar-background {
+    background-color: #f8f8f8;
+}
+
+.title-header {
+    text-align: center;
+    padding: 25px 15px;
+    font-family: Verdana;
+}
+
+.input-box {
+    padding: 25px 52px;
+    background-color: #ce0b10;
+}
+
+.input-outcode {
+    display: inline;
+    margin-right: 15px;
+    width: 50%;
+    height: 44px;
+    border-radius: 2px;
+}
+
+.btn-takeaway {
+    color: #333 !important;
+    padding: 14px 28px;
+    height: 44px;
+    line-height: 1;
+    background-color: #fec752;
+    border-radius: 2px;
+    font-size: 12pt;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: central;
+}
+
+.btn-takeaway:hover {
+    background-color: #feb71f;
+}
+
+.restaurant-container {
+    margin-top: 20px;
+    padding: 25px 30px;
+}
+
+.no-data-container {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #ce0b10;
+    text-align: center;
+    color: #fff;
+    font-size: 12pt;
+}

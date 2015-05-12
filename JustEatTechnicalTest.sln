@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest", "JustEatTechnicalTest\JustEatTechnicalTest.csproj", "{5FBFF1A1-2F11-48FE-B8F5-4D400A4CB132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest.WebApplication.UnitTests", "JustEatTechnicalTest.Tests\JustEatTechnicalTest.WebApplication.UnitTests.csproj", "{D390DFB3-1090-48A6-8528-08931F7AD1DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{EB7041BF-8C23-4A00-901D-06CD1F2FE139}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{A327A356-F0D5-450A-B907-D55576F3B2EB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\JustEatTechnicalTest-WAWS-dev.json = PublishScripts\Configurations\JustEatTechnicalTest-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest.APIAccess", "APIAccess\JustEatTechnicalTest.APIAccess.csproj", "{C6107746-02D0-4B57-A08B-642605F7ED06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustEatTechnicalTest.DataLayer", "JustEatTechnicalTest.DataLayer", "{93F24E7E-E836-4A19-B3E1-62F0DB4C08BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustEatTechnicalTest.UnitTests", "JustEatTechnicalTest.UnitTests", "{50A04DDA-B3E0-45D2-B031-1E096B52DF17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustEatTechnicalTest.WebApplication", "JustEatTechnicalTest.WebApplication", "{C7BBF230-650A-4CD5-8700-FC85B6FA1D60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest.Entities", "JustEatTechnicalTest.Entities\JustEatTechnicalTest.Entities.csproj", "{7DBFC79E-C820-41C6-8683-65E82483B88A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest.Entities.UnitTests", "JustEatTechnicalTest.Entities.UnitTests\JustEatTechnicalTest.Entities.UnitTests.csproj", "{8B1A0ED7-BF72-4420-8E0E-F0C6A6DC3C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest.APIAccess.UnitTests", "JustEatTechnicalTest.APIAccess.UnitTests\JustEatTechnicalTest.APIAccess.UnitTests.csproj", "{E99C8B45-6868-433E-AC3D-E0051A8BFFA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FBFF1A1-2F11-48FE-B8F5-4D400A4CB132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBFF1A1-2F11-48FE-B8F5-4D400A4CB132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FBFF1A1-2F11-48FE-B8F5-4D400A4CB132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FBFF1A1-2F11-48FE-B8F5-4D400A4CB132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D390DFB3-1090-48A6-8528-08931F7AD1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D390DFB3-1090-48A6-8528-08931F7AD1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D390DFB3-1090-48A6-8528-08931F7AD1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D390DFB3-1090-48A6-8528-08931F7AD1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6107746-02D0-4B57-A08B-642605F7ED06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6107746-02D0-4B57-A08B-642605F7ED06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6107746-02D0-4B57-A08B-642605F7ED06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6107746-02D0-4B57-A08B-642605F7ED06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBFC79E-C820-41C6-8683-65E82483B88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBFC79E-C820-41C6-8683-65E82483B88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBFC79E-C820-41C6-8683-65E82483B88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBFC79E-C820-41C6-8683-65E82483B88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1A0ED7-BF72-4420-8E0E-F0C6A6DC3C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1A0ED7-BF72-4420-8E0E-F0C6A6DC3C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1A0ED7-BF72-4420-8E0E-F0C6A6DC3C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1A0ED7-BF72-4420-8E0E-F0C6A6DC3C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99C8B45-6868-433E-AC3D-E0051A8BFFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99C8B45-6868-433E-AC3D-E0051A8BFFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99C8B45-6868-433E-AC3D-E0051A8BFFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99C8B45-6868-433E-AC3D-E0051A8BFFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FBFF1A1-2F11-48FE-B8F5-4D400A4CB132} = {C7BBF230-650A-4CD5-8700-FC85B6FA1D60}
+		{D390DFB3-1090-48A6-8528-08931F7AD1DB} = {50A04DDA-B3E0-45D2-B031-1E096B52DF17}
+		{A327A356-F0D5-450A-B907-D55576F3B2EB} = {EB7041BF-8C23-4A00-901D-06CD1F2FE139}
+		{C6107746-02D0-4B57-A08B-642605F7ED06} = {93F24E7E-E836-4A19-B3E1-62F0DB4C08BC}
+		{7DBFC79E-C820-41C6-8683-65E82483B88A} = {93F24E7E-E836-4A19-B3E1-62F0DB4C08BC}
+		{8B1A0ED7-BF72-4420-8E0E-F0C6A6DC3C05} = {50A04DDA-B3E0-45D2-B031-1E096B52DF17}
+		{E99C8B45-6868-433E-AC3D-E0051A8BFFA3} = {50A04DDA-B3E0-45D2-B031-1E096B52DF17}
+	EndGlobalSection
+EndGlobal
