@@ -7,6 +7,7 @@ Total time spent was about 4 hours, if more time was allotted, I would:
   - Abstract the REST API into its own interface so it could be replaced with another REST implementation if required
   - Provide a concrete return value instead of "object" on API calls so that they can be properly tested
   - Refactor jQuery table population after receiving JSON data to increase readability
+  - Add pagination, searching and sorting to the result table for a better UX
 
 #### 2. What was the most useful feature that was added to the latest version of your chosen language?
 #### Please include a snippet of code that shows how you've used it.
